@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    
+    <center>
+       <h1> <span id="text" style="background-color:#FFFF00">Face Recognizer</span></h1>
+      <br><br>
+
+      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+      <div id="nameofstuff">
+      <b class="name_of_objects">
+       
+        <span style="text-align: center;"  class="border-highlight">My Sister-</span><br><br>
+        
+        <span style="text-align: center;" class="border-highlight">Me-</span> <br><br>
+      
+        <span style="text-align: center;" class="border-highlight"> My Mom-</span> <br><br>
+        
+       
+       
+      </b>
+    </div>
+    <label id="webcamtext">Webcam View - </label><br>
+    <div id="webcamanddiv">
+      
+      <br>
+     <div id="webcam"></div>
+     </div>
+      
+      <label id="captured_view">Captured View</label>
+      <div id="result"></div>
+
+      <br><br>
+     <button id="button1" class="btn btn-success" onclick="takesnapshot()">Capture Image</button>
+      <br><br>
+      <button class="btn btn-danger" onclick="check()">Identify Image</button>
+
+      <br><br>
+
+      <p style="font-size: 22px;">Object : <span id="resultobjectname"></span>  </p>
+      <p style="font-size: 22px;">Accuracy : <span id="resultobjectaccuracy"></span></p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
